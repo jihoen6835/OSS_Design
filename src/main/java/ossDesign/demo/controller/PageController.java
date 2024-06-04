@@ -12,10 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
 
     @RequestMapping("/")
-    public String home(Model model) {
-        return "signup";
+    public String showHomePage() {
+        return "home"; // home.html이 위치한 경로
     }
 
+    @GetMapping("/signup") // GET 요청에 대한 처리
+    public String showSignupPage() {
+        return "signup"; // signup.html이 위치한 경로
+    }
 
 }
 

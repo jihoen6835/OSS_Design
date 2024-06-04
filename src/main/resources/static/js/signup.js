@@ -36,7 +36,7 @@ function signup() {
         })
         .then(data => {
             alert(data);
-            // 회원가입 성공 시 다음 작업을 수행하거나 페이지를 리디렉션할 수 있습니다.
+            window.location.href = '/' // 홈으로 이동
         })
         .catch(error => {
             console.error('Error:', error);

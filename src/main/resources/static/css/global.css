@@ -16,10 +16,10 @@
     src: url("/assets/fonts/NanumSquareB.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "nanum";
-    font-weight: 400;
-    src: url("/assets/fonts/NanumSquareR.ttf") format("truetype");
-}
+/*@font-face {*/
+/*    font-family: "nanum";*/
+/*    font-weight: 400;*/
+/*    src: url("/assets/fonts/NanumSquareR.ttf") format("truetype");*/
+/*}*/
 
 
