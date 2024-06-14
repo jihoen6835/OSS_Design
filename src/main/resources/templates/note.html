@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>메모하기</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .memo-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .memo-container h2, .memo-container h3 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .memo-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .memo-container input[type="text"],
+        .memo-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .memo-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .memo-container button:hover {
+            opacity: 0.8;
+        }
+        #memo-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header id="header"></header>
+
+<main class="content">
+    <div class="container">
+        <section id="memo-section" class="memo-container">
+            <h2>메모하기</h2>
+            <form id="memo-form">
+                <label for="memo-title">제목:</label>
+                <input type="text" id="memo-title" name="memo-title" required>
+                <br>
+                <label for="memo-content">내용:</label>
+                <textarea id="memo-content" name="memo-content" required></textarea>
+                <br>
+                <button type="submit">추가</button>
+            </form>
+            <div id="memo-list">
+                <h3>메모 목록</h3>
+                <ul id="memo-items">
+                    <!-- Memo items will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="/js/loadingBase.js"></script>
+<script src="/js/memo.js"></script> <!-- New JavaScript file for memo functionality -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Scheduler</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header"></header>
+
+<main class="content">
+    <style>
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px 20px; /* Adjust padding for header space */
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .pro1container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dropdowns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .dropdowns select {
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            display: flex;
+            height: 30px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-segment {
+            flex-grow: 1;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <div class="pro1container">
+        <div class="dropdowns">
+            <select id="courseSelect">
+                <option value="" disabled selected>교육과정 선택</option>
+                <option value="1">초등</option>  <!-- courseId = 1 for elementary -->
+                <option value="2">중등</option>  <!-- courseId = 2 for middle -->
+                <option value="3">고등</option>  <!-- courseId = 3 for high -->
+            </select>
+            <select id="gradeSelect" disabled>
+                <option value="" disabled selected>학년 선택</option>
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+                <option value="4">4학년</option>
+                <option value="5">5학년</option>
+                <option value="6">6학년</option>
+            </select>
+        </div>
+        <div class="progress-bar" id="progress-bar">
+            <!-- 진도 표시 바는 JavaScript로 동적으로 생성 -->
+        </div>
+    </div>
+</main>
+
+<script src="/js/loadingBase.js"></script>
+<script src="/js/progress.js"></script>
+</body>
+</html>

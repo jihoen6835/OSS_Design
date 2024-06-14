@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Scheduler</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .header a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 10px;
+            border: 10px solid #007bff
+        ;
+        }
+        .header a:hover {
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: #004fff;
+            border:none;
+            color: white;
+            box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+            position: absolute;
+            transition: 0.3s;
+        }
+        button:focus{
+            outline: 0;
+        }
+        button:hover{
+            background-color: rgba(0, 79, 255, 0.9);
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
+        }
+        *{
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="/">Math Scheduler</a>
+        <div>
+            <form id="logoutForm" action="/logout" method="post">
+                <a href="/calender">캘린더</a>
+                <a href="/checkProc">학습진도</a>
+                <a href="/note">메모하기</a>
+                <button type="submit">로그아웃</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <button>확인</button>
+</body>
+</html>
